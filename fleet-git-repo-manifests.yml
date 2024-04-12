@@ -1,8 +1,8 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: fleet-demo
-  namespace: fleet-local
+  name: fleet-demo-manifests
+  namespace: fleet-default
 spec:
   repo: https://github.com/jmcglock/fleet-demo
   branch: main
