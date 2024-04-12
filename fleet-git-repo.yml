@@ -5,6 +5,7 @@ metadata:
   namespace: fleet-local
 spec:
   repo: https://github.com/jmcglock/fleet-demo
+  branch: main
   paths:
 #  - adguard-home
 #  - changedetection
