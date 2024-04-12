@@ -1,0 +1,21 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: fleet-demo
+  namespace: fleet-local
+spec:
+  repo: https://github.com/jmcglock/fleet-demo
+  paths:
+#  - adguard-home
+#  - changedetection
+#  - firefox
+#  - flame-dashboard
+#  - ghost-blog
+#  - homarr
+#  - littlelink
+#  - mysql-workbench
+#  - mysql
+#  - pihole
+#  - smokeping
+#  - teamcity
+#  - uptime-kuma
