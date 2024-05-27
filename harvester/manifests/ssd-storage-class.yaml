@@ -1,0 +1,16 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: ssd-default
+  annotations:
+    storageclass.beta.kubernetes.io/is-default-class: 'true'
+    storageclass.kubernetes.io/is-default-class: 'true'
+provisioner: driver.longhorn.io
+parameters:
+  diskSelector: ssd
+  migratable: 'true'
+  numberOfReplicas: '1'
+  staleReplicaTimeout: '30'
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+allowVolumeExpansion: true

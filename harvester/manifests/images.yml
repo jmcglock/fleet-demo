@@ -1,0 +1,39 @@
+apiVersion: harvesterhci.io/v1beta1
+kind: VirtualMachineImage
+metadata:
+  name: jammy-default
+  annotations:
+    harvesterhci.io/storageClassName: ssd
+  labels:
+    harvesterhci.io/imageDisplayName: jammy-default
+    harvesterhci.io/os-type: ubuntu
+  namespace: default
+spec:
+  displayName: jammy-default
+  sourceType: download
+  storageClassParameters:
+    diskSelector: ssd
+    migratable: 'true'
+    numberOfReplicas: '1'
+    staleReplicaTimeout: '30'
+  url: https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+---
+apiVersion: harvesterhci.io/v1beta1
+kind: VirtualMachineImage
+metadata:
+  name: jammy-minimal
+  annotations:
+    harvesterhci.io/storageClassName: ssd
+  labels:
+    harvesterhci.io/imageDisplayName: jammy-minimal
+    harvesterhci.io/os-type: ubuntu
+  namespace: default
+spec:
+  displayName: jammy-minimal
+  sourceType: download
+  storageClassParameters:
+    diskSelector: ssd
+    migratable: 'true'
+    numberOfReplicas: '1'
+    staleReplicaTimeout: '30'
+  url: https://cloud-images.ubuntu.com/minimal/releases/jammy/release/ubuntu-22.04-minimal-cloudimg-amd64.img
