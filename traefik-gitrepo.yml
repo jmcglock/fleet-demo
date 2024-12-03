@@ -7,4 +7,4 @@ spec:
   repo: https://github.com/jmcglock/fleet-demo
   revision: main
   paths:
-  - traefik
+  - fleet-demo/traefik
