@@ -1,0 +1,19 @@
+global:
+
+persistence:
+  defaultClass: true
+  defaultFsType: ext4
+  defaultMkfsParams: ""
+  defaultClassReplicaCount: 1
+  defaultDataLocality: best-effort
+  defaultReplicaAutoBalance: ignored
+  reclaimPolicy: Delete
+  migratable: true
+  removeSnapshotsDuringFilesystemTrim: enabled
+
+defaultSettings:
+  defaultDataPath: /data
+  defaultDataLocality: best-effort
+  storageOverProvisioningPercentage: 100
+  storageMinimalAvailablePercentage: 10
+  defaultReplicaCount: 1

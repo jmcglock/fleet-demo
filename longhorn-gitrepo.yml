@@ -2,9 +2,9 @@ apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
   name: longhorn
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
-  repo: https://github.com/jmcglock/fleet-demo.git
+  repo: https://github.com/jmcglock/fleet-demo
   revision: main
   paths:
-  - .
+  - longhorn

@@ -1,10 +1,27 @@
-# Goodbye ArgoCD, Hello Fleet?
-Fleet is a container management and deployment engine designed to offer users more control on the local cluster and constant monitoring through GitOps.
-## Read more about Fleet [here](https://fleet.rancher.io/)
-My homelab runs on Harvester which heavily utilizes fleet. I have several kubernetes cluster running on top of Harvester. Why not make the switch from ArgoCD to Fleet?
+# Fleet Demo Repository
 
-## What's in this repo?
-This repo contains some demo manifests and helm charts that I am using to test out Fleet. I will be updating this repo as I learn more about Fleet. Public learning is always fun!
+A demo repository for Fleet - a powerful GitOps-based continuous delivery solution for Kubernetes.
 
-#### A small note. 
-I obviously also have a private repo for fleet. This repo is just for public learning purposes and is largely the same as my kubernetes repo.
+## What is Fleet?
+
+Fleet is a container management and deployment engine that provides:
+- Enhanced control over local clusters
+- Continuous GitOps-based monitoring
+- Seamless multi-cluster management
+- Native integration with Rancher/Harvester
+
+## Repository Contents
+
+This repository contains:
+- Sample Kubernetes manifests
+- Example Helm charts
+- Fleet configuration examples
+- Production-like deployment scenarios
+
+## Getting Started
+
+Learn more about Fleet at [fleet.rancher.io](https://fleet.rancher.io/)
+
+## Note
+
+This is a public learning repository that mirrors a private production setup. Feel free to use these examples as reference for your own Fleet implementations.
