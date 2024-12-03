@@ -3,5 +3,4 @@ helm:
   chart: traefik
   repo: https://helm.traefik.io/traefik
   releaseName: "traefik"
-  version: "latest"
   namespace: traefik
