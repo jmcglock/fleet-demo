@@ -3,8 +3,16 @@ kind: GitRepo
 metadata:
   name: traefik
   namespace: fleet-default
+  labels:
+    app: traefik
+    type: ingress-controller
 spec:
   repo: https://github.com/jmcglock/fleet-demo
   branch: main
   paths:
   - traefik
+  targetNamespace: traefik
+  forceSyncGeneration: 1
+  insecureBranch: false
+  timeout: 300
+  pollingInterval: 60

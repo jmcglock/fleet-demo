@@ -3,8 +3,16 @@ kind: GitRepo
 metadata:
   name: longhorn
   namespace: fleet-default
+  labels:
+    app: longhorn
+    type: storage
 spec:
   repo: https://github.com/jmcglock/fleet-demo
   branch: main
   paths:
   - longhorn
+  targetNamespace: longhorn-system
+  forceSyncGeneration: 1
+  insecureBranch: false
+  timeout: 300
+  pollingInterval: 60
