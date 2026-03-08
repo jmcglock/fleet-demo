@@ -1,2 +1,5 @@
 defaultNamespace: from-code-to-cloud
 namespace: from-code-to-cloud
+
+dependsOn:
+  - name: traefik-traefik
