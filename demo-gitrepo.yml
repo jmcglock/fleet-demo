@@ -1,0 +1,17 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: from-code-to-cloud
+  namespace: fleet-default
+  labels:
+    app: from-code-to-cloud
+    type: demo
+spec:
+  repo: https://github.com/jmcglock/fleet-demo
+  branch: main
+  paths:
+  - demo
+  forceSyncGeneration: 1
+  insecureBranch: false
+  timeout: 300
+  pollingInterval: 60

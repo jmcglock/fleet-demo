@@ -1,0 +1,14 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: from-code-to-cloud-ingressroute
+  namespace: from-code-to-cloud
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`demo.jmcglock.com`)
+      kind: Rule
+      services:
+        - name: from-code-to-cloud-svc
+          port: 80
