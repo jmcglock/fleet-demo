@@ -2,7 +2,8 @@ defaultNamespace: longhorn-system
 helm:
   chart: longhorn
   repo: https://charts.longhorn.io
+  version: "1.11.0"
   releaseName: "longhorn"
-  namespace: longhorn
+  namespace: longhorn-system
   valuesFiles:
     - values.yml

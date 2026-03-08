@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "helm"
+    directory: "/longhorn"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "helm"
+    directory: "/traefik"
+    schedule:
+      interval: "weekly"
