@@ -2,6 +2,6 @@ defaultNamespace: traefik
 helm:
   chart: traefik
   repo: https://traefik.github.io/charts
-  version: "42.1.2"
+  version: "42.1.3"
   releaseName: "traefik"
   namespace: traefik
